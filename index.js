@@ -42,6 +42,6 @@ io.on('connection', (socket) => {
   });
 });
 
-server.listen(PORT, ()  => {
-  console.log(`The server is Listening on http://localhost:${PORT}`);
+server.listen(PORT,'0.0.0.0', ()  => {
+  console.log(`The server is Listening on https://chat-me.azurewebsites.net:${PORT}`);
 });
