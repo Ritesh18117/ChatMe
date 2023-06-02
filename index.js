@@ -9,7 +9,7 @@ const socket = require('socket.io');
 
 const io = socket(server);
 
-const PORT =  3000;
+const PORT = process.env.PORT || 3000;
 const users = {};
 let usersNum = 0;
 
@@ -45,5 +45,3 @@ io.on('connection', (socket) => {
 server.listen(PORT, ()  => {
   console.log(`The server is Listening on http://localhost:${PORT}`);
 });
-
-// server.listen(80, '192.168.21.189')
