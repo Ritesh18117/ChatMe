@@ -4,7 +4,7 @@ const path = require('path');
 const express = require('express');
 
 const app = express();
-const server = require('http').Server(app);
+const server = require('https').Server(app);
 const socket = require('socket.io');
 
 const io = socket(server);
