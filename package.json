@@ -4,7 +4,7 @@
     "description": "A Simple Chat Client",
     "main": "index.js",
     "scripts": {
-        "start": "gulp"
+        "start": "node index.js"
     },
     "keywords": [
         "chat",
